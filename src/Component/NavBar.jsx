@@ -5,7 +5,7 @@ import Logo from '../Assets/Logo/Blaack.svg'
 import {NavLinks} from './main'
 
 const NavBar = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     const toggle = () => {
         setOpen(!open)
@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
 
     <>
-        <nav className='w-full z-50 relative flex justify-between items-center'>
+        <nav className='w-full z-50 relative flex justify-between items-center pb-4'>
             <img src={Logo} alt="Logo" className='w-[250px]' />
 
 
@@ -40,7 +40,7 @@ const NavBar = () => {
 
             {
                 open && 
-                <div className='fixed lg:hidden md:hidden top-0 p-[8em_25px] duration-300 ease-linear overflow-hidden z-10 left-0 w-screen h-screen bg-[rgb(241,241,241,.5)] backdrop-blur-[50px]  flex flex-col gap-5'>
+                <div className='fixed lg:hidden md:hidden top-0 p-[8em_25px] duration-300 ease-linear overflow-hidden z-10 left-0  w-screen h-screen bg-[rgb(241,241,241,.5)] backdrop-blur-[50px]  flex flex-col gap-3'>
                     {
                         NavLinks.map((link, index) => {
                             const {title, url} = link

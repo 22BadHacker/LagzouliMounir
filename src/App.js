@@ -3,7 +3,7 @@ import {NavBar, Home, Effect2} from './Component/main'
 
 export default function App() {
   return (
-    <div className='w-screen relative h-auto'>
+    <div className='w-screen relative h-screen overflow-y-scroll '>
       <Effect2 />
       <div className="max-w-[1150px] px-5 px py-[13px] mx-auto w-full h-auto">
         <Router>

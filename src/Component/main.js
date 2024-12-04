@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import Home from './Home'
-import About from "../Sections/About";
+import AboutContain from "../Sections/AboutContain";
 import { FaLinkedinIn, FaInstagram, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 
@@ -10,7 +10,7 @@ export {
     Home,
 
     // Sections
-    About,
+    AboutContain,
 }
 
 export const socialLinks= [
@@ -49,7 +49,7 @@ export const NavLinks = [
 export const Effect = () => {
   return (
     <>
-      <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+      <div class="absolute inset-0 -z-10 h-full w-full bg-[rgb(241,241,241,.5)] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
           <div class="absolute  right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-green-400/60 opacity-40 blur-[100px]"></div>
           <div class="absolute  right-1/3 -translate-x-1/2 bottom-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-green-400/60 opacity-30 blur-[100px]"></div>
           <div class="absolute  left-0 bottom-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-blue-400/40 opacity-50 blur-[100px]"></div>

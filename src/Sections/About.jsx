@@ -15,7 +15,7 @@ const About = () => {
       </div>
 
       <div className="flex lg:flex-row md::flex-row sm:flex-row flex-col gap-4 items-center w-full ">
-        <span className="bg-black w-full lg:w-fit md:w-fit sm:w-fit flex items-center justify-center hover:bg-[rgb(0,0,0,.8)] text-white px-10 rounded-full py-[15px]">Contact me</span>
+        <span className="bg-black w-full lg:w-[180px] cursor-pointer md:w-[180px] sm:w-[180px] flex items-center justify-center hover:bg-[rgb(0,0,0,.8)] text-white  rounded-full h-[50px]">Contact me</span>
         <div className="flex items-center lg:gap-4 md:gap-4 sm:gap-4 justify-between lg:w-fit md:w-fit sm:w-fit w-full">
           {
             socialLinks.map((link, index) => {
