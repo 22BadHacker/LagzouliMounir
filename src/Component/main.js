@@ -78,10 +78,10 @@ export const soLinks = [
 
 export const socialLinks= [
     // {href: '/contact', items: <span className="bg-black hover:bg-[rgb(0,0,0,.8)] text-white px-10 rounded-full py-[15px]">Contact me</span>},
-    {href: '/contact', items: <FaInstagram className="text-[20.5px] hover:bg-gradient-to-bl from-[#d9307c] to-[#f27935] hover:text-white transition duration-200 ease-in-out bg-white p-[11px] rounded-full size-[50px] " />},
-    {href: '/contact', items: <div className='relative text-[26px] hover:bg-[#25d366] hover:text-white transition duration-200 ease-in-out flex justify-center items-center bg-white  rounded-full size-[50px] '> <FaWhatsapp className=" absolute"/></div>},
-    {href: '/contact', items: <div className='relative text-[26px] hover:bg-[#0a66c2] hover:text-white transition duration-200 ease-in-out flex justify-center items-center bg-white  rounded-full size-[50px] '> <FaLinkedinIn className=" absolute"/></div>},
-    {href: '/contact', items: <FaGithub className=" text-[24px] hover:bg-[#162a6c] hover:text-white bg-white p-[10px] rounded-full size-[50px] duration-200 ease-in-out"/>},
+    {href: '/', items: <FaInstagram className="text-[20.5px] hover:bg-gradient-to-bl from-[#d9307c] to-[#f27935] hover:text-white transition duration-200 ease-in-out bg-white p-[11px] rounded-full size-[50px] " />},
+    {href: 'https://wa.me/+212708148077', items: <div className='relative text-[26px] hover:bg-[#25d366] hover:text-white transition duration-200 ease-in-out flex justify-center items-center bg-white  rounded-full size-[50px] '> <FaWhatsapp className=" absolute"/></div>},
+    {href: 'https://www.linkedin.com/in/mounirlagzouli/', items: <div className='relative text-[26px] hover:bg-[#0a66c2] hover:text-white transition duration-200 ease-in-out flex justify-center items-center bg-white  rounded-full size-[50px] '> <FaLinkedinIn className=" absolute"/></div>},
+    {href: 'https://github.com/22BadHacker', items: <FaGithub className=" text-[24px] hover:bg-[#162a6c] hover:text-white bg-white p-[10px] rounded-full size-[50px] duration-200 ease-in-out"/>},
 ]
 
 
@@ -104,7 +104,7 @@ export const NavLinks = [
     {
         title: "Get in touch",
         url: "/",
-        // params: '#getInTouch',
+        
 
 
     },

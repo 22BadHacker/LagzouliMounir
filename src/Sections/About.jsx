@@ -23,7 +23,7 @@ const About = () => {
               return (
 
                 
-                  <Link  to={href} className=' lg:scale-95 scale-[.85] font-semibold font-open-sans'>{items}</Link>
+                  <Link  to={href} target='_blank' className=' lg:scale-95 scale-[.85] font-semibold font-open-sans'>{items}</Link>
               )
             })
           }
