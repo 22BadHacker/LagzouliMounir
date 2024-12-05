@@ -9,6 +9,7 @@ module.exports = {
         'roboto': ['var(--roboto)', 'sans-serif'],
         'open-sans': ['var(--Open-Sans)', 'sans-serif'],
         'sign': ['var(--sign)', 'sans-serif'],
+        'transforma': ['var(--transforma)', 'sans-serif'],
       },
       colors: {
         'orangee': 'var(--main-color)',

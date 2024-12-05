@@ -15,7 +15,9 @@ const NavBar = () => {
 
     <>
         <nav className='w-full z-50 relative flex justify-between items-center pb-4'>
-            <img src={Logo} alt="Logo" className='w-[250px]' />
+            <Link to='/'>
+                <img src={Logo} alt="Logo" className='w-[250px]' />
+            </Link>
 
 
             <div className=" mt-1 gap-5 items-center hidden lg:flex md:flex">
@@ -24,7 +26,7 @@ const NavBar = () => {
                         const {title, url} = link
                         return(
                             
-                            <Link to={url} key={index} className='text-black last:borderBtn hover:text-orangee font-medium text-[16.8px] transition-all duration-200'>{title}</Link>    
+                            <Link  to={url} key={index} className='text-black last:borderBtn hover:text-orangee font-medium text-[16.8px] transition-all duration-200'>{title}</Link>    
                         )
                     })
                 }
@@ -46,8 +48,8 @@ const NavBar = () => {
                             const {title, url} = link
                             return(
                                 <>
-                                    <Link to={url} className='text-black  bg-transparent h-[50px] overflow-hidden hover:text-orangee translate-x-1 font-open-sans font-semibold text-[30px] transition-all duration-200' key={index}>
-                                        <motion.div exit={{opacity: 0, filter: 'blur(5px)'}} animate={{y: 0, filter: 'blur(0px)'}} initial={{y: 60, filter: 'blur(5px)'}} transition={{duration: 0.4, delay: index * 0.1, ease: 'easeInOut', type: 'tween'}}  >{title}</motion.div> 
+                                    <Link onClick={()=> setOpen(false)} to={url} className='text-black  bg-transparent h-[48px] overflow-hidden hover:text-orangee translate-x-1 font-open-sans font-semibold text-[40px] transition-all duration-200' key={index}>
+                                        <motion.div href={url} key={index} exit={{opacity: 0, filter: 'blur(5px)', transition: {delay: index * 0.1}}} animate={{y: 0, opacity: 1}} initial={{y: 60, opacity: 0}} transition={{duration: 0.4, delay: index * 0.05, ease: 'easeInOut', type: 'tween'}}  >{title}</motion.div> 
                                     </Link>
 
                                 </>
