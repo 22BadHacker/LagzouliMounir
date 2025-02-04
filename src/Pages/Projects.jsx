@@ -1,7 +1,4 @@
 import React from 'react'
-import img1 from '../Assets/Projects/VictoriaBag-min.webp'
-import img2 from '../Assets/Projects/VictoriaBottle-min.webp'
-import img3 from '../Assets/Projects/Lip Balm Mockup.png'
 import {projectPage} from '../Component/main'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -9,42 +6,54 @@ import gsap from 'gsap'
 
 const Projects = () => {
 
-  useGSAP(() => {
-    gsap.from('.boox', {
-      y: '100%',
-      scale: 0,
-      opacity: 0,
-      duration: .3,
-      delay: 0.3,
-      ease: 'ease-in-out',
-      stagger :{
-        amount: .4
-      },
-      yoyo: true
-    })
-  })
+  // useGSAP(() => {
+  //   gsap.from('.boox', {
+  //     y: '100%',
+  //     scale: 0,
+  //     opacity: 0,
+  //     duration: .3,
+  //     delay: 0.3,
+  //     ease: 'ease-in-out',
+  //     stagger :{
+  //       amount: .4
+  //     },
+  //     yoyo: true
+  //   })
+  // })
   return (
-    <div className='w-full h-auto grid grid-cols-1'>
-      <div className='boxees overflow-hidden w-full h-auto md:columns-3 sm:columns-2 lg:columnBox py-5'>
+    <div className='w-full h-full py-4'>
+      <div className='w-full py-10 pb-12 flex items-center justify-center '>
+          <h1 className='text-[50px] font-transforma'>A Glimpse into My Work and Progress </h1>
+
+      </div>
+
+      <div className='w-full pb-5 flex items-center justify-between'>
+          <p className='text-[17px] relative w-fit'>my Collection <span className='size-[5px] bg-[#ff4745] rounded-full absolute top-1 -right-1'/></p>
+          <div className='flex items-center gap-4'>
+              <p className='border-[.5px] text-[14px] hover:text-white hover:bg-[#323033] cursor-pointer rounded-full border-black/20 px-4 py-1'>Logo Design</p>
+              <p className='border-[.5px] text-[14px] hover:text-white hover:bg-[#323033] cursor-pointer rounded-full border-black/20 px-4 py-1'>Business Card</p>
+              <p className='border-[.5px] text-[14px] hover:text-white hover:bg-[#323033] cursor-pointer rounded-full border-black/20 px-4 py-1'>Posters</p>
+              <p className='border-[.5px] text-[14px] hover:text-white hover:bg-[#323033] cursor-pointer rounded-full border-black/20 px-4 py-1'>Websites</p>
+              <p className='border-[.5px] text-[14px] hover:text-white hover:bg-[#323033] cursor-pointer rounded-full border-black/20 px-4 py-1'>UX Design</p>
+          </div>
+      </div>
+
+      <div className=' columns-1 gap-4 overflow-hidden w-full h-full md:columns-3 sm:columns-2 cursor-pointer '>
           {
             projectPage.map((item, index) => {
-              const {img, name, desc, icon1, icon2, icon3, icone4, icone5} = item
+              const {img, name, desc, alt, icons} = item
               return (
-                <div key={index} className='boox relative h-auto overflow-hidden rounded-xl mb-4'>
+                <div key={index} className='flex flex-col gap-2 relative h-auto pb-5'>
                   
-                  <span>{img}</span>
-                  <div className="desc flex absolute -bottom-8  right-0 px-4 flex-col gap-0">
-                    <p className='text-white text-[22px] font-open-sans'>{name}</p>
-                    <h5 className='text-white/70 text-[12px] font-semibold relative -top-1'>{desc}</h5>
+                  <img className='object-cover hover:saturate-[1.3] duration-[200ms] ease-inOut w-full h-full' src={img} alt={alt} />
+                  <div className="w-full flex gap-3 items-center">
+                    <p className='text-[#222222] font-open-sans lg:text-[17px] text-[18px]'>{name} </p>
+                    <span className='text-[14px] font-roboto opacity-80'>by</span>
+                    <span className='text-[17px] flex items-center gap-2'>{icons}</span>
+                    
                   </div>
-                  <div className="linnks flex gap-3 absolute top-3 right-3 items-center">
-
-                    {icon1 && <span className='text-white text-[20px]'>{icon1}</span>}
-                    { icon2 && <span className='text-white text-[20px]'>{icon2}</span>}
-                    { icon3 && <span className='text-white text-[20px]'>{icon3}</span>}
-                    { icone4 && <span className='text-white text-[20px]'>{icone4}</span>}
-                    { icone5 && <span className='text-white text-[20px]'>{icone5}</span>}
-                  </div>
+                  
+                 
 
                 </div>
               )

@@ -23,6 +23,8 @@ import Poster from '../Assets/Projects/MorocAffiche (2).webp'
 import form1  from '../Assets/Projects/up.webp'
 import poster2  from '../Assets/Projects/Clear_Shampo_Poster.webp'
 import form2 from '../Assets/Projects/sign (1).webp'
+import nike from '../Assets/Projects/Nike.webp'
+
 
 // Icons
 
@@ -32,11 +34,13 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { RiTailwindCssFill, RiPhpFill } from "react-icons/ri";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { FaCss3 } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa6";
+import { FaCss3Alt, FaGitAlt, FaJs } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { FaPhp } from "react-icons/fa6";
 import { LiaProjectDiagramSolid } from "react-icons/lia"
 import { MdAlternateEmail } from "react-icons/md";
+
+// import { IoLogoHtml5 } from "react-icons/io5";
 
 
 
@@ -174,18 +178,19 @@ export const upcoming = [
 
 
 export const projectPage = [
-    {img: <img src={Bag} className='object-cover h-[400px]  w-full rounded-xl' alt="" /> , name: 'Victoria', desc: 'Logo for Cosmitic Brand', icon1: <SiAdobeillustrator className="text-[#001e36]"/>, icon2: <SiAdobephotoshop className="text-[#330000]"/>},
-    {img: <img src={message} className='object-cover h-[360px]  w-full rounded-xl' alt="" /> , name: 'Notfication', desc: 'Web app', icon1: <IoLogoHtml5 className="text-[#e34f26] text-[22px] " />, icon2: <FaCss3 className="text-[#254bdd]"/>},
-    {img: <img src={port} className='object-cover h-[380px] aspect-video  w-full rounded-xl' alt="" /> , name: 'My Portfolio', desc: 'Personal Portfolio', icon1: <SiAdobeillustrator className="text-[#001e36]"/>, icon2: <SiAdobephotoshop className="text-[#330000]"/>, icon3: <SiJavascript className="text-[#f7df1e]"/>, icone4: <FaCss3 className="text-[#1572b6]"/>, icone5: <IoLogoHtml5 className="text-[#e34f26] text-[22px] " />},
-    {img: <img src={guitar} className='object-cover h-[360px] aspect-video  w-full rounded-xl' alt="" /> , name: 'Guitar Class', desc: 'Flayer', icon2: <SiAdobephotoshop className="text-[#330000]"/>},
-    {img: <img src={HMS} className='object-cover h-[380px] aspect-video  w-full rounded-xl' alt="" /> , name: 'HMS Proprete', desc: 'Business Card', icon1: <SiAdobeillustrator className="text-[#fff]"/>, icon2: <SiAdobephotoshop className="text-[#fff]"/>},
-    {img: <img src={poster2} className='object-cover h-[360px] aspect-video  w-full rounded-xl' alt="" /> , name: 'Clear Shampo', desc: 'Poster', icon2: <SiAdobephotoshop className="text-[#fff]"/>},
-    {img: <img src={soft} className='object-cover h-[410px] aspect-video  w-full rounded-xl' alt="" /> , name: 'MEAGASOFT', desc: 'Business Card', icon1: <SiAdobeillustrator className="text-[#fff]"/>, icon2: <SiAdobephotoshop className="text-[#fff]"/>},
-    {img: <img src={head} className='object-cover h-[300px] aspect-video  w-full rounded-xl' alt="" /> , name: 'JBL', desc: 'Headphones Flayer',  icon2: <SiAdobephotoshop className="text-[#fff]"/>},
-    {img: <img src={Poster} className='object-cover h-[350px] aspect-video  w-full rounded-xl' alt="" /> , name: 'Morocco Post', desc: 'Poster',  icon2: <SiAdobephotoshop className="text-[#fff]"/>},
-    {img: <img src={form1} className='object-cover h-[350px] aspect-video  w-full rounded-xl' alt="" /> , name: 'Heaven Made', desc: 'Sign up Form', icon1: <IoLogoHtml5 className="text-[#e34f26] text-[22px] " />, icon2: <FaCss3 className="text-[#254bdd]"/>, icon3: <SiJavascript className="text-[#f7df1e]"/>},
-    {img: <img src={drag} className='object-cover h-[380px] aspect-video  w-full rounded-xl' alt="" /> , name: 'Drag & Drop', desc: 'Web App', icon1: <IoLogoHtml5 className="text-[#e34f26] text-[22px] " />, icon2: <FaCss3 className="text-[#254bdd]"/>, icon3: <SiJavascript className="text-[#f7df1e]"/>},
-    {img: <img src={form2} className='object-cover h-[320px] aspect-video  w-full rounded-xl' alt="" /> , name: 'Illusion Studio', desc: 'Sign up Form', icon1: <IoLogoHtml5 className="text-[#e34f26] text-[22px] " />, icon2: <FaCss3 className="text-[#254bdd]"/>, icon3: <SiJavascript className="text-[#f7df1e]"/>},
+    {img:Bag, alt:'' , name: 'Victoria Logo', desc: 'Logo for Cosmitic Brand',icons: [<SiAdobeillustrator size={14} className="text-[#330000]"/>, <SiAdobephotoshop size={14} className="text-[#001e36]"/>]},
+    {img: message, alt:''  , name: 'Notfication Page', desc: 'Web app', icons: [<IoLogoHtml5 className="text-[#dd4b25]"/>, <FaCss3Alt className="text-[#005d88]"/>]},
+    {img:port, alt:'', name: 'Protfolio v1', desc: 'Personal Portfolio', icons: [<IoLogoHtml5 className="text-[#dd4b25]"/>, <FaCss3Alt className="text-[#005d88]"/>, <FaJs className="text-[#f7c940]"/>]},
+    {img:guitar, alt:'' , name: 'Guitar Poster', desc: 'Flayer', icons: [<SiAdobeillustrator/>]},
+    {img:HMS, alt:'', name: 'HMS', desc: 'Business Card', icons: [<SiAdobeillustrator size={14} className="text-[#330000]"/>]},
+    {img:poster2, alt:'' , name: 'Clear Poster', desc: 'Poster', icons: [<SiAdobephotoshop size={14} className="text-[#001e36]"/>]},
+    {img: soft,alt:'' , name: 'MEAGASOFT', desc: 'Business Card', icons: [<SiAdobeillustrator size={14} className="text-[#330000]"/>]},
+    {img:head, alt:'', name: 'JBL Poster', desc: 'Headphones Flayer', icons: [<SiAdobephotoshop size={14} className="text-[#001e36]"/>]},
+    {img:Poster, alt:'' , name: 'Morocco Post', desc: 'Poster', icons: [<SiAdobephotoshop size={14} className="text-[#001e36]"/>]},
+    {img:nike, alt:'' , name: 'Nike Poster', desc: 'Poster', icons: [<SiAdobephotoshop size={14} className="text-[#001e36]"/>]},
+    {img:form1 , alt:'',  name: 'Heaven Made', desc: 'Sign up Form', icons: [<IoLogoHtml5 className="text-[#dd4b25]"/>, <FaCss3Alt className="text-[#005d88]"/>,]},
+    {img:drag  , alt:'', name: 'Drag & Drop', desc: 'Web App', icons: [<IoLogoHtml5 className="text-[#dd4b25]"/>, <FaCss3Alt className="text-[#005d88]"/>, <FaJs className="text-[#f7c940]"/>] },
+    {img: form2 , alt:'', name: 'Illusion Studio', desc: 'Sign up Form', icons: [<IoLogoHtml5 className="text-[#dd4b25]"/>, <FaCss3Alt className="text-[#005d88]"/>,]},
     
 ]
 

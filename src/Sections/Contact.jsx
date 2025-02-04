@@ -8,8 +8,8 @@ import {socialLinks} from '../Component/main'
 const Contact = () => {
   return (
     <div className='w-full grid md:grid-cols-2 grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 h-auto  '>
-        <div className="flex flex-col justify-end overflow-hidden relative gap-4 p-[20px_25px]  shadow-[2px_2px_3px_rgb(0,0,0,.2)] h-[250px] rounded-3xl">
-            <div class="absolute inset-0 -z-10 h-full w-full  bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+        <div className="flex flex-col backdrop-blur-[5px] bg-white/05 border-[.5px] border-black/20 justify-end overflow-hidden relative gap-4 p-[20px_25px]  shadow-md h-[250px] rounded-3xl">
+            {/* <div class="absolute inset-0 -z-10 h-full w-full  bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div> */}
             <div className="flex w-full  flex-col gap-1">
                 <p className='text-[28px] font-open-sans pb-2'>Wanna work together?</p>
                 <h5 className='text-[16px]'>Feel free to reach out for collaborations or just a friendly hello</h5>
@@ -18,8 +18,8 @@ const Contact = () => {
         </div>
 
 
-        <div className='w-full  relative p-[20px_25px] overflow-hidden shadow-[2px_2px_3px_rgb(0,0,0,.2)]  rounded-3xl  h-full  flex flex-col  justify-between'>
-        <div class="absolute top-0 -z-10 h-full w-full bg-transparent"><div class="absolute bottom-auto left-0 right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[100px]"></div></div>
+        <div className='w-full border-[.5px] border-black/20 relative p-[20px_25px] overflow-hidden shadow-md  rounded-3xl  h-full  flex flex-col  justify-between'>
+        <div class="absolute top-0 -z-10 h-full backdrop-blur-[20px] w-full bg-transparent"><div class="absolute bottom-auto left-0 right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[100px]"></div></div>
            <div className="flex gap-1 flex-col">
                 <p className='text-[28px] font-open-sans pb-2 w-full flex   items-end'>Reach out?</p>
                 <div className="flex w-full  gap-3 items-center"><FaPhone /> <a href="#" className='underline font-open-sans text-[15px]'>+212 708 148 077</a></div>
